@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Forms</title>
+</head>
+<body>
+    <h1>Create Account Details</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <ul>
+                <li>
+                    <!-- <label for="firstName">Your first name</label> -->
+                    <input type="text" name="firstName" id="firstName" placeholder="FirstName" required><br>
+                </li>
+                <li>
+                    <input type="email" id="email" placeholder="Your Email Address">
+                </li>
+                <li>
+                    <input type="tel" name="phone" id="phone" placeholder="Your Phone Number"><br>
+                </li>
+                <li>
+                    <input type="date" name="DOB" placeholder="Date of Birth" required><br>
+                </li>
+                <li>
+                    <input type="password" name="password" id="password" required placeholder="Password"><br>
+                </li>
+                <li>
+                    <textarea name="address" id="address" placeholder="Address" rows="5" cols="50"></textarea><br>
+                </li>
+                <li>
+                    <input type="file" name="images" id="images" placeholder="upload photograph" accept=".jpg,.png" multiple><br>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Information</legend>
+            <div>
+                <p>Gender</p>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                
+                <input type="radio" name="gender" id="female" checked>
+                <label for="female">Female</label>
+            </div>
+
+            <div>
+                <p>State of Origin</p>
+                <select title="State of Origin">
+                    <optgroup label="East">
+                        <option value="">Enugu</option>
+                        <option value="">Abia</option>
+                        <option value="">Imo</option>
+
+                    </optgroup>
+
+                    <optgroup label="North">
+                    <option value="kn">Kaduna</option>
+                    <option value="mn">Minna</option>
+                    <option value="kn">Kano</option>
+                    </optgroup>
+                    
+                    <optgroup label="West">
+                    <option value="lag">Lagos</option>
+                    <option value="on">Ondo</option>
+                    <option value="og">Ogun</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <p>Courses</p>
+
+                <input type="checkbox" name="courses" id="react">
+                <label for="react">React</label>
+
+                <input type="checkbox" name="courses" id="python">
+                <label for="react">Python</label>
+
+                <input type="checkbox" name="courses" id="django">
+                <label for="react">Django</label>
+
+                <input type="checkbox" name="courses" id="datascience">
+                <label for="react">Data Science</label>
+
+                <input type="checkbox" name="courses" id="java">
+                <label for="react">Java</label>
+
+                <input type="checkbox" name="courses" id="javaScript">
+                <label for="react">JavaScript</label>
+
+                <input type="checkbox" name="courses" id="productDesign">
+                <label for="react">Product Design</label>
+
+                <input type="checkbox" name="courses" id="cyberSecurity">
+                <label for="react">React</label>
+
+                <input type="checkbox" name="courses" id="machineLearning">
+                <label for="react">Machine Learning</label>
+
+                <input type="checkbox" name="courses" id="graphicDesign">
+                <label for="react">Graphic Design</label>
+            </div>
+        </fieldset>
+        <div>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">I accept <a href="#">all terms and conditions</a></label>
+        </div>
+
+        <input type="submit" value="Sign Up">
+    </form>
+</body>
+</html>
